@@ -67,9 +67,41 @@ console.log("arrayOfNumbers тэгш тооны нийлбэр : ", EvenSum);
 
 //3-6
 let OddUrjver = 1;
-for (let Y = 0; Y < arrayOfNumbers.length; Y++) {
-  if (arrayOfNumbers[Y] % 2 == 1) {
-    OddUrjver *= arrayOfNumbers[Y];
+for (let y = 0; y < arrayOfNumbers.length; y++) {
+  if (arrayOfNumbers[y] % 2 == 1) {
+    OddUrjver *= arrayOfNumbers[y];
   }
 }
 console.log("arrayOfNumbers сондгой тоонуудын үржвэр : ", OddUrjver);
+
+//3-7
+let largeN = arrayOfNumbers[0];
+for (let i = 0; i < arrayOfNumbers.length; i++) {
+  if (largeN < arrayOfNumbers[i]) {
+    largeN = arrayOfNumbers[i];
+    console.log(arrayOfNumbers[i]);
+  }
+}
+console.log("arrayOfNumbers ийн хамгийн их тоо : ", largeN);
+
+//3-8
+let minN = arrayOfNumbers[0];
+for (let i = 0; i < arrayOfNumbers.length; i++) {
+  if (minN > arrayOfNumbers[i]) {
+    minN = arrayOfNumbers[i];
+  }
+}
+console.log("arrayOfNumbers ийн хамгийн бага тоо : ", minN);
+
+let nae = "erdenesuren";
+console.log(nae[0]);
+console.log(nae[1]);
+console.log(nae[2]);
+console.log(nae[3]);
+console.log(nae[4]);
+console.log(nae[5]);
+console.log(nae[6]);
+console.log(nae[7]);
+console.log(nae[8]);
+console.log(nae[9]);
+console.log(nae[10]);
